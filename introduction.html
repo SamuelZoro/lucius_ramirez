@@ -38,6 +38,29 @@ document.getElementById("mySidenav").style.position = "absolute";
 
 }
 
+function openNav2() {
+document.getElementById("sidenav2").style.width = "100%";
+/* to hide main content when sidebar gets opened */
+document.getElementById("main-content").style.display = "none";
+/* to ensure sidebar doesn't get bigger than screen */
+document.getElementById("sidenav2").style.position = "absolute";
+/*to stop height of container changing when opening sidebar*/
+document.getElementById("content-container").style.minHeight = "50rem";
+/*to stop height of container changing when opening sidebar*/
+document.getElementById("content-container").style.maxHeight = "55rem";
+
+document.getElementById("sidenav2").style.overflowY = "hidden";
+}
+
+function closeNav2() {
+document.getElementById("sidenav2").style.width = "0";
+/* to show main content when sidebar gets closed */
+document.getElementById("main-content").style.display = "block";
+/* to ensure position of main content remains at the top after the sidebar is closed */
+document.getElementById("sidenav2").style.position = "absolute";
+
+}
+
 /*to open file into specified html tag when clicking on arrow icon */
 $(document).ready(function(){
 $("#rightArrow").click(function(){
@@ -88,6 +111,20 @@ $("#main-content").load("Human-Nature.html");
         </div>
         </div>
         <a id="loadContent2" onclick="closeNav()">The Nature of Humans</a>
+      </div>
+
+      <!--Side navigation 2-->
+    <div id="containSideNav">
+        <div id="sidenav2">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><i id="cross" class="fa-solid fa-xmark fa-2xs"></i></a>
+    
+          <!--algolia instantsearch widgets-->
+          <div class="search-panel__results">
+            <div id="searchbox"></div>
+            <div id="hits"></div>
+            <div id="pagination"></div>
+          </div>
+        </div>
       </div>
   
       <!-- Main content-->
