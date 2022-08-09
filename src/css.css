@@ -1,0 +1,27 @@
+/*body properties*/
+body {
+    background-image: url("../Photos/samplePhotoiphone8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    overflow-x:hidden;
+    height:100vh;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    background-color: rgb(0, 0, 0);
+    position:relative;
+    overflow:overlay;
+  }
+
+  /*to make using rem unit easier */
+html {
+    font-size: 62.5%;
+  
+  }
+
+  /* font effects */
+@font-face {
+    font-family: mainFont;
+    src: url(/Font/Perfect\ DOS\ VGA\ 437.ttf);
+  }
