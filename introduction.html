@@ -13,7 +13,45 @@
   <script src="jquery.js"></script>
   <title>Lucius Ramirez - Introduction</title>
 <script>
- 
+ /* Set the width of the side navigation to 100% */
+function openNav() {
+document.getElementById("mySidenav").style.width = "100%";
+/* to hide main content when sidebar gets opened */
+document.getElementById("main-content").style.display = "none";
+/* to ensure sidebar doesn't get bigger than screen */
+document.getElementById("mySidenav").style.position = "relative";
+/*to stop height of container changing when opening sidebar*/
+document.getElementById("content-container").style.minHeight = "50rem";
+/*to stop height of container changing when opening sidebar*/
+document.getElementById("content-container").style.maxHeight = "55rem";
+
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+/* to show main content when sidebar gets closed */
+document.getElementById("main-content").style.display = "block";
+/* to ensure position of main content remains at the top after the sidebar is closed */
+document.getElementById("mySidenav").style.position = "absolute";
+
+
+}
+
+/*to open file into specified html tag when clicking on arrow icon */
+$(document).ready(function(){
+$("#rightArrow").click(function(){
+$("#main-content").load("Human-Nature.html");
+});
+/*to open file into specified html tag when clicking on element */
+$("#loadContent").click(function(){
+$("#main-content").load("intro.html");
+});
+/*to open file into specified html tag when clicking on element*/
+$("#loadContent2").click(function(){
+$("#main-content").load("Human-Nature.html");
+});
+});
 </script>
 </head>
 
@@ -39,6 +77,18 @@
 <!--Main content container-->
 <div id="centerContainer">
     <div id="content-container">
+
+        <!--Side navigation 1-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="cross" class="fa-solid fa-xmark fa-2xs"></i></a>
+        <a  onclick="closeNav()" id="loadContent">Introduction</a>
+        <div id="centerDiv">
+            <div id="dividerContainer">
+        <hr class="divider2">
+        </div>
+        </div>
+        <a id="loadContent2" onclick="closeNav()">The Nature of Humans</a>
+      </div>
   
       <!-- Main content-->
       <main id="main-content">
