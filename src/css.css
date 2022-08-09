@@ -26,6 +26,19 @@ html {
     src: url(/Font/Perfect\ DOS\ VGA\ 437.ttf);
   }
 
+  /* Navbar Animation */
+
+#move {
+    animation: movement linear 1s;
+    height:0;
+  }
+
+  /*for content to move upwards */
+@keyframes movement {
+    0%   {margin-top:20px;}
+    25% {margin-top:0px;}
+  }
+
     /*flex container for topbar */
 .flex-container.two {
     display: flex;
@@ -103,4 +116,13 @@ html {
     
   }
 
+  /*for content to fade in gradually*/
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
   
