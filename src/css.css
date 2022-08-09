@@ -94,6 +94,28 @@ html {
     overflow-x:hidden;
   }
 
+  /*properties of dropdown links */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+  }
+
+  /*hover property for dropdown links */
+.dropdown-content a:hover {
+    color: rgba(255, 255, 255, 0.515);
+  
+  }
+
+/*line divider for dropdown links */
+hr.divider {
+    max-width: 100%;
+    margin-right: 10px;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.481);
+    border-bottom: none;
+  }
+
   /*second font */
 .font2 {
     font-family: mainFont;
@@ -126,3 +148,36 @@ html {
     }
   }
   
+  /*flex container for 'typed.js' text */
+.flex-container.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:90vh;
+}
+
+/* main section nested content */
+#mainText {
+    text-align: center;
+    
+    display:none;
+  }
+
+  /*properties of animated typewriter text */
+#typed {
+    font-family: mainFont;
+    font-size: 1.0rem;
+    color: rgb(255, 196, 0);
+    
+  }
+
+  /*properties of parapgraph element */
+p {
+    text-shadow:black;
+  }
+
+  /*cursor animation property */
+.typed-cursor {
+
+    color: white;
+  }
