@@ -430,3 +430,501 @@ hr.divider2 {
     font-size: 3.6rem;
     
   }
+
+  /*second side nav links */
+#sidenav2 a {
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /*mobile responsive design*/
+@media screen and (min-width:320px) and (max-width: 374px) {
+    #typed {
+      
+      font-size: 0.9rem;
+      
+      
+    }
+    #logo {
+      max-width: 5.5rem;
+      min-height: 2.9rem;
+    }
+    #knowYourself {
+      
+      font-size: 0.5rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6rem;
+      
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 8.6rem;
+      
+    }
+    #Ruggiero {
+      max-width:180px; 
+      max-height:180px;
+    }
+    #intro-para {
+      font-size: 1.3rem;
+      padding-right:10px;
+      padding-left:10px;
+      
+    }
+    #know {
+      
+      font-size:10px;
+    }
+    
+    
+  }
+  /*mobile responsive design*/
+  @media screen and (min-width: 375px) and (max-width:413px) {
+    #typed {
+      
+      font-size: 1.1rem;
+      
+      
+    }
+    .flex-container.three {
+      margin-top:1.0rem;
+    }
+    #logo {
+      max-width: 6.5rem;
+      min-height: 3.9rem;
+    }
+    #knowYourself {
+      
+      font-size: 1.0rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 9.1rem;
+      
+    }
+  }
+  /*mobile responsive design*/
+  @media screen and (min-width: 414px) and (max-width:767px) {
+    #typed {
+      
+      font-size: 1.3rem;
+      
+      
+    }
+    .flex-container.three {
+      margin-top:1.1rem;
+    }
+  }
+  /*desktop responsive design*/
+  @media screen and (min-width: 768px) and (max-width:833px) {
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 1.9rem;
+      
+      
+    }
+    .flex-container.three {
+      margin-top:2rem;
+    }
+    #logo {
+      max-width: 9rem;
+      min-height: 6.4rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 1.5rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 13.4rem;
+      padding-bottom:1rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 1.6rem;
+    }
+    #centerContainer{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:10rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+    
+  }
+  /*desktop responsive design*/
+  @media screen and (min-width: 834px) and (max-width:911px) {
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 1.9rem;
+      
+      
+    }
+    .flex-container.three {
+      margin-top:2rem;
+    }
+    #logo {
+      max-width: 9rem;
+      min-height: 6.4rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 1.5rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 13.4rem;
+      padding-bottom:1rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 1.6rem;
+    }
+    #centerContainer{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:10rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+  }
+  /*desktop responsive design*/
+  @media screen and (min-width: 912px) and (max-width:1111px) {
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 2.4rem;
+      
+      
+    }
+    .flex-container.three {
+      margin-top:4rem;
+    }
+    #logo {
+      max-width: 10.5rem;
+      min-height: 7.9rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 2rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 18.4rem;
+      padding-bottom:1rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 2rem;
+    }
+    #centerContainer{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:10rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+  }
+  /*desktop responsive design*/
+  @media screen and (min-width: 1112px) and (max-width:1023px){
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 1rem;
+      
+    }
+    .flex-container.three {
+      margin-top:4rem;
+      margin-left:30rem;
+      margin-right:30rem;
+    }
+    #logo {
+      max-width: 6.5rem;
+      min-height: 3.9rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 1rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 13.4rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 1.6rem;
+    }
+    #centerContainer{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:10rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+  
+  }
+  /*desktop responsive design*/
+  @media screen and (min-width: 1024px) and (max-width:1365px){
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 2rem;
+      
+    }
+    .flex-container.three {
+      margin-top:4rem;
+      margin-left:25rem;
+      margin-right:25rem;
+    }
+    #logo {
+      max-width: 6.5rem;
+      min-height: 3.9rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 1rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 9.5rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 1.1rem;
+    }
+    #centerContainer{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:10rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+  
+  }
+  /*desktop responsive design*/
+  @media screen and (min-width: 1366px) and (max-width:1919px) {
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 2rem;
+      
+    }
+    .flex-container.three {
+      margin-top:4rem;
+      margin-left:30rem;
+      margin-right:30rem;
+    }
+    #logo {
+      max-width: 6.5rem;
+      min-height: 3.9rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 1rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 9.4rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 1.1rem;
+    }
+    #centerContainer{
+      padding-left:30rem;
+      padding-right:30rem;
+      padding-top:5rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+  
+  }
+  
+  /*desktop responsive design*/
+  @media screen and (min-width: 1920px){
+    body {
+      background-image: url("../Photos/samplePhoto.png");
+    }
+    #typed {
+      
+      font-size: 1.9rem;
+      
+      
+    }
+    .flex-container.three {
+      margin-top:4rem;
+      margin-left:45rem;
+      margin-right:45rem;
+    }
+    #logo {
+      max-width: 10rem;
+      min-height: 7.4rem;
+      margin-left:2rem;
+    }
+    #knowYourself {
+      
+      font-size: 1.5rem;
+      
+      
+    }
+    #downArrow {
+      font-size:1.6em;
+      margin-right:2rem;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      max-width: 18.4rem;
+      padding-bottom:1rem;
+    }
+    .typed-cursor {
+  
+      font-size:1.6em;
+    }
+    .font2 {
+      font-family: mainFont;
+      font-size: 1.6rem;
+    }
+    #centerContainer{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:10rem;
+    }
+    #content-container {
+      min-height:50rem;
+    }
+    #leftArrow {
+      
+      margin-top:200px;
+      
+    }
+  
+  }
