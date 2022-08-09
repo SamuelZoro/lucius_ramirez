@@ -16,6 +16,35 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script type="module" src="./src/app.js"></script>
   <title>Lucius Ramirez</title>
+
+  <script>
+    //function to toggle between opening and closing the dropdown when clicking on the dropdown element
+  $(document).ready(function () {
+      $("div.dropdown").click(function () {
+        $("div.dropdown-content").toggle();
+      });
+      //function to close the dropdown when clicking outside the dropdown element
+      window.onclick = function (event) {
+        if (!event.target.matches("#downArrow") && !event.target.matches("#knowYourself")) {
+          $("div.dropdown-content").hide();
+        }
+      }
+
+      //function to set timer on when animation begins
+      const myTimeout = setTimeout(startAnimation, 900);
+
+      function startAnimation() {
+        //code to create typing animation effect
+        var typed = new Typed('#typed', {
+          stringsElement: '#mainText',
+          typeSpeed: 40,
+          
+        });
+      }
+
+
+    });
+  </script>
 </head>
 
 <body>
@@ -40,7 +69,16 @@
   
   </ul>
 
-
+  <!--Main section-->
+  <ul class="flex-container three">
+    <li>
+      <main id="mainText">
+      <p>forget the surface-show trends that soak in and out of your sponge persona, this is the time to find where your naked soul belongs</p>
+    </main>
+    <span id="typed"></span>
+  </li>
+    
+  </ul>
 
   
 </body>
