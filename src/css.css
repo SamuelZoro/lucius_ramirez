@@ -259,6 +259,11 @@ p {
     font-size:1.6rem;
   }
 
+  /*menu property */
+#menu {
+    cursor:pointer;
+  }
+
   /*container to centre image */
 #centerPhoto {
     text-align: center;
@@ -315,4 +320,82 @@ p {
       opacity: 1;
       display:block;
   }
+  }
+
+  /*side navigation */
+.sidenav {
+    height: auto;
+    width: 0;
+    position:absolute;
+    z-index: 1;
+    border-radius:10px;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+    font-family: mainFont;
+    font-weight: bold;
+    background-color: rgba(30, 30, 30, 0);
+    
+  }
+
+  /*hover property of side nav */
+.sidenav a:hover {
+    color: rgba(255, 255, 255, 0.515);
+  }
+
+  /*side navigation links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /*close button of sidenav */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3.6rem;
+    margin-left: 50px;
+  }
+
+  /* x icon of sidenav*/
+#cross {
+    position:absolute;
+    margin-top:10px;
+    
+  }
+
+  /*'introduction' onclick link to load content via jquery function */
+#loadContent {
+    cursor: pointer;
+  }
+
+  /*element to center divider */
+#centerDiv {
+    margin:auto;
+  }
+
+  /*container of divider */
+#dividerContainer {
+    max-width:inherit;
+    padding-left:20px;
+    padding-right:20px;
+    
+  }
+
+  /*divider properties */
+hr.divider2 {
+    max-width:100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.481);
+    border-bottom: none;
+    position:relative;
+  }
+
+  /*'the nature of humans' onclick link to load content via jquery function */
+#loadContent2 {
+    cursor: pointer;
   }
