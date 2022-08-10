@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  
+
+  <script src="https://kit.fontawesome.com/bcec439864.js" crossorigin="anonymous"></script>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="./src/css.css">
+
+  <title>Lucius Ramirez - Introduction</title>
+  <script>
+
+/* Set the width of the side navigation to 100% */
+function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            /* to hide main content when sidebar gets opened */
+            document.getElementById("main-content").style.display = "none";
+            /* to ensure sidebar doesn't get bigger than screen */
+            document.getElementById("mySidenav").style.position = "relative";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.minHeight = "55rem";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.maxHeight = "55rem";
+
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            /* to show main content when sidebar gets closed */
+            document.getElementById("main-content").style.display = "block";
+            /* to ensure position of main content remains at the top after the sidebar is closed */
+            document.getElementById("mySidenav").style.position = "absolute";
+
+
+        }
+
+        function openNav2() {
+            document.getElementById("sidenav2").style.width = "100%";
+            /* to hide main content when sidebar gets opened */
+            document.getElementById("main-content").style.display = "none";
+            /* to ensure sidebar doesn't get bigger than screen */
+            document.getElementById("sidenav2").style.position = "absolute";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.minHeight = "55rem";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.maxHeight = "55rem";
+
+            document.getElementById("sidenav2").style.overflowY = "hidden";
+        }
+
+        function closeNav2() {
+            document.getElementById("sidenav2").style.width = "0";
+            /* to show main content when sidebar gets closed */
+            document.getElementById("main-content").style.display = "block";
+            /* to ensure position of main content remains at the top after the sidebar is closed */
+            document.getElementById("sidenav2").style.position = "absolute";
+
+        }
+
+        /*to open file into specified html tag when clicking on arrow icon */
+        $(document).ready(function () {
+            $("#rightArrow").click(function () {
+                $("#main-content").load("Human-Nature.html");
+            });
+            /*to open file into specified html tag when clicking on element */
+            $("#loadContent").click(function () {
+                $("#main-content").load("intro.html");
+            });
+            /*to open file into specified html tag when clicking on element*/
+            $("#loadContent2").click(function () {
+                $("#main-content").load("Human-Nature.html");
+            });
+        });
+
+  </script>
+</head>
+
+<body>
+  <!--Main section-->
+
+  
+  
+<!--Main content container-->
+    <!--Side navigation-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="cross" class="fa-solid fa-xmark fa-2xs"></i></a>
+      <a href="Introduction.html" onclick="closeNav()">Introduction</a>
+      <div id="centerDiv">
+      <hr class="divider2">
+      </div>
+      <a href="Human-Nature.html" onclick="closeNav()">The Nature of Humans</a>
+    </div>
+
+    <!--Side navigation-->
+    <div id="containSideNav">
+    <div id="sidenav2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><i id="cross" class="fa-solid fa-xmark fa-2xs"></i></a>
+    
+      <!--algolia instantsearch widgets-->
+      <div class="search-panel__results">
+        <div id="searchbox"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Main content-->
+    <main id="main-content">
+      <ul class="flex-container">
+        <!--Search icon-->
+        <li class="flex-items">
+          <span onclick="openNav2()">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </span>
+      </li>
+      <!--Heading-->
+        <li class="flex-items"><h1 id="know">KNOW YOURSELF</h1></li>
+        <!--menu-->
+        <li class="flex-items">
+          <span onclick="openNav()">
+          <img src="Photos/Burger menu.svg" alt="Menu" id="menu" width="14.95" height="11.22">
+        </span>
+      </li> 
+      </ul>
+      <!--image-->
+      <div id="centerPhoto">
+      <img src="Photos/619d521eee191b02fd15fac4_powerful-nicole-ruggiero-nft-s.jpeg" alt="Nicole Ruggiero's Art" id="Ruggiero" width="211.58" height="211.58">
+      </div>
+      <!--Subheading-->
+      <h2 id="subheading">
+          INTRODUCTION
+      </h2>
+      <!--paragraphs-->
+      <p id="intro-para">
+        The whole point of this discourse is for you to reconsider the nature of human reality. 
+        To realise the part you can play, to finding your purpose. 
+        The way the rules have been set has generationally rendered us amnesiac to how things are in their most basic, 
+        material, unbiased form. They&#39;ve taken our identity, instead of giving us a sense of who we really are. 
+        One of the most honourable, commendable things you can do is to not feel a need to conform to these rules.
+      </p>
+      <p id="intro-para">
+        The best way to find yourself is to &#34;lose&#34; yourself. 
+        To think outside the box. Let go of what is supposedly true about the world and what it means to be human. 
+        Hold on to what is deemed a falsehood in our customs. 
+        This intimate detachment from the set-in-stone ways allows you to start again from scratch. 
+        You&#39;re encouraging a novel interaction with the world. 
+        You, my friend, are the founder of yourself.        
+      </p>
+      <!--next page arrow icon-->
+      <i id="rightArrow"class="fa-solid fa-caret-right fa-2xl"></i>
+    </main>
+
+</body>
+
+</html>
+</html>
