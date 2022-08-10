@@ -15,75 +15,68 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <title>Lucius Ramirez - The Nature of Humans</title>
 <script>
-    /* Set the width of the side navigation to 100% */
+/* Set the width of the side navigation to 100% */
 function openNav() {
-document.getElementById("mySidenav").style.width = "100%";
-/* to hide main content when sidebar gets opened */
-document.getElementById("main-content").style.display = "none";
-/* to ensure sidebar doesn't get bigger than screen */
-document.getElementById("mySidenav").style.position = "relative";
+            document.getElementById("mySidenav").style.width = "100%";
+            /* to hide main content when sidebar gets opened */
+            document.getElementById("main-content").style.display = "none";
+            /* to ensure sidebar doesn't get bigger than screen */
+            document.getElementById("mySidenav").style.position = "relative";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.minHeight = "55rem";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.maxHeight = "55rem";
 
-document.getElementById("leftArrow").style.display = "none";
+        }
 
-document.getElementById("content-container").style.minHeight = "50rem";
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            /* to show main content when sidebar gets closed */
+            document.getElementById("main-content").style.display = "block";
+            /* to ensure position of main content remains at the top after the sidebar is closed */
+            document.getElementById("mySidenav").style.position = "absolute";
 
-document.getElementById("content-container").style.maxHeight = "0";
 
-}
+        }
 
-function openNav2() {
-document.getElementById("sidenav2").style.width = "100%";
-/* to hide main content when sidebar gets opened */
-document.getElementById("main-content").style.display = "none";
-/* to ensure sidebar doesn't get bigger than screen */
-document.getElementById("sidenav2").style.position = "absolute";
+        function openNav2() {
+            document.getElementById("sidenav2").style.width = "100%";
+            /* to hide main content when sidebar gets opened */
+            document.getElementById("main-content").style.display = "none";
+            /* to ensure sidebar doesn't get bigger than screen */
+            document.getElementById("sidenav2").style.position = "absolute";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.minHeight = "55rem";
+            /*to stop height of container changing when opening sidebar*/
+            document.getElementById("content-container").style.maxHeight = "55rem";
 
-document.getElementById("leftArrow").style.display = "none";
+            document.getElementById("sidenav2").style.overflowY = "hidden";
+        }
 
-document.getElementById("content-container").style.minHeight = "50rem";
+        function closeNav2() {
+            document.getElementById("sidenav2").style.width = "0";
+            /* to show main content when sidebar gets closed */
+            document.getElementById("main-content").style.display = "block";
+            /* to ensure position of main content remains at the top after the sidebar is closed */
+            document.getElementById("sidenav2").style.position = "absolute";
 
-document.getElementById("content-container").style.maxHeight = "0";
+        }
 
-document.getElementById("sidenav2").style.overflowY = "hidden";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-/* to show main content when sidebar gets closed */
-document.getElementById("main-content").style.display = "block";
-/* to ensure position of main content remains at the top after the sidebar is closed */
-document.getElementById("mySidenav").style.position = "absolute";
-
-document.getElementById("leftArrow").style.display = "block";
-}
-
-function closeNav2() {
-document.getElementById("sidenav2").style.width = "0";
-/* to show main content when sidebar gets closed */
-document.getElementById("main-content").style.display = "block";
-/* to ensure position of main content remains at the top after the sidebar is closed */
-document.getElementById("sidenav2").style.position = "absolute";
-
-document.getElementById("leftArrow").style.display = "block";
-
-}
-
-/*to open file into specified html tag when clicking on arrow icon */
-$(document).ready(function(){
-$("#leftArrow").click(function(){
-$("#main-content").load("intro.html");
-document.getElementById("leftArrow").style.display = "none";
-});
-/*to open file into specified html tag when clicking on element */
-$("#loadContent").click(function(){
-$("#main-content").load("intro.html");
-});
-/*to open file into specified html tag when clicking on element */
-$("#loadContent2").click(function(){
-$("#main-content").load("Human-Nature.html");
-});
-});
+        /*to open file into specified html tag when clicking on arrow icon */
+        $(document).ready(function () {
+            $("#leftArrow").click(function () {
+                $("#main-content").load("Human-Nature.html");
+            });
+            /*to open file into specified html tag when clicking on element */
+            $("#loadContent").click(function () {
+                $("#main-content").load("intro.html");
+            });
+            /*to open file into specified html tag when clicking on element*/
+            $("#loadContent2").click(function () {
+                $("#main-content").load("Human-Nature.html");
+            });
+        });
 </script>
 </head>
 
