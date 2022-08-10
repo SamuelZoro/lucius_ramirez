@@ -1,0 +1,599 @@
+/*body properties*/
+body{
+  background-image: url(images/samplePhotoiphone8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  height:100vh;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:0px;
+  background-color: rgb(255, 255, 255);
+  
+}
+/*to make using rem unit easier */
+html {
+  font-size: 62.5%;
+
+}
+/* font effects */
+@font-face {
+  font-family: mainFont;
+  src: url(Fonts/Perfect\ DOS\ VGA\ 437.ttf);
+}
+/*form title/heading */
+#formTitle {
+  font-family: mainFont;
+  color:white;
+}
+/*subtext where I put my email information in the form container*/
+#formDetails {
+  font-family: arial;
+  color:rgba(255, 255, 255, 0.481);
+  font-size:1.4rem;
+}
+/*name input field */
+#nameInput {
+  min-height:2.5rem;
+  color:white;
+  margin-bottom:10px;
+}
+/*email input */
+#emailInput {
+  min-height:2.5rem;
+  color:white;
+  margin-bottom:10px;
+}
+/*tag for message input field */
+textarea {
+  resize: vertical;
+  min-height:10rem;
+  
+}
+/*contact form properties */
+#contactForm {
+  color:white;
+  
+}
+/*container of form */
+#page-container{
+  padding-top:110px;
+}
+/*flex container for topbar */
+.flex-container.two {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+}
+/*'know yourself' dropdown text */
+#knowYourself {
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.0rem;
+  margin-right: 1px;
+  color: white;
+  
+}
+/*form container */
+#form-container {
+  margin:auto;
+  text-align:center;
+  padding-left:50px;
+  padding-right:50px;
+  background-color: rgba(30, 30, 30, 0.171);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding:0;
+  animation: mainContent linear 1s;
+  animation-delay: 300ms;
+  opacity:0;
+  animation-fill-mode: forwards;
+  padding-bottom:15px;
+  padding-left:5px;
+  padding-right:10px;
+}
+/*form input fields */
+.fields {
+  box-shadow: none;
+  width:100%;
+  position:relative;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.044);
+  border-radius: 5px;
+  color:rgb(255, 255, 255);
+  border-width: 0.5px;
+  font-family: arial;
+  border-style:solid;
+  outline:none;
+  border-color:white;
+}
+/*when form inputs are in focus */
+.fields:focus {
+  border-color:rgba(255, 255, 255, 0.481);
+    color:white;
+    
+}
+/*field placeholder */
+.fields::placeholder {
+  color:rgba(255, 255, 255, 0.543);
+}
+
+/*animation element to move text upwards */
+#move {
+  animation: movement linear 1s;
+  height:0px;
+}
+/*outside of dropdown*/
+.dropdown {
+  float: right;
+  width: auto;
+  padding-top: 26px;
+  animation: fadeInAnimation linear 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/*icon to open up dropdown */
+#downArrow {
+  margin-top: 3px;
+  margin-left:2px;
+  float: right;
+  
+}
+/*second font */
+.font2 {
+  font-family: mainFont;
+  font-size: 1.0rem;
+}
+/*line divider for dropdown links */
+hr.divider {
+  max-width: 100%;
+  margin-right: 10px;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.481);
+  border-bottom: none;
+}
+
+/*inside of dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.171);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  min-width: auto;
+  overflow: auto;
+  margin-top: 5px;
+  max-width: 9rem;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x:hidden;
+}
+/*properties of dropdown links */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  padding: 3px;
+}
+/*hover property for dropdown links */
+.dropdown-content a:hover {
+  color: rgba(255, 255, 255, 0.515);
+
+}
+
+/*line divider for dropdown links */
+hr.divider {
+  max-width: 8rem;
+  margin-right: 10px;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.481);
+  border-bottom: none;
+}
+/*logo image */
+#logo {
+  margin-top: 20px;
+  margin-left: 15px;
+  animation: fadeInAnimation linear 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/*for content to move upwards */
+@keyframes movement {
+  0%   {margin-top:20px;}
+  25% {margin-top:0px;}
+}
+/*for content to fade in gradually*/
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/*main animations */
+
+@keyframes mainContent{
+  0% {
+    opacity: 0;
+    display:none;
+}
+100% {
+    opacity: 1;
+    display:block;
+}
+}
+
+/*send message button */
+button {
+  border:none;
+  background-color: rgba(0, 0, 0, 0.171);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+  color:white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* negatvie/error alert message box */
+.alert {
+  padding: 10px;
+  background-color: #f44336d8; /* Red */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Arial;
+  display:none;
+}
+/*positive alert message */
+#alert2 {
+  padding: 10px;
+  background-color: #36f475d8; 
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Arial;
+  display:none;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 2.2rem;
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*desktop responsive design*/
+@media screen and (min-width: 912px) and (max-width:1111px) {
+  body {
+    background-image: url("images/samplePhoto.png");
+  }
+  #typed {
+    
+    font-size: 2.4rem;
+    
+    
+  }
+  .flex-container.three {
+    margin-top:4rem;
+  }
+  #logo {
+    max-width: 10.5rem;
+    min-height: 7.9rem;
+    margin-left:2rem;
+  }
+  #knowYourself {
+    
+    font-size: 2rem;
+    
+    
+  }
+  #downArrow {
+    font-size:1.6em;
+    margin-right:2rem;
+  }
+  .dropdown-content {
+    margin-top: 5px;
+    max-width: 18.4rem;
+    padding-bottom:1rem;
+  }
+  .typed-cursor {
+
+    font-size:1.6em;
+  }
+  .font2 {
+    font-family: mainFont;
+    font-size: 2rem;
+  }
+  #centerContainer{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:10rem;
+  }
+  #content-container {
+    min-height:50rem;
+  }
+  #leftArrow {
+    
+    margin-top:200px;
+    
+  }
+  #centerContain{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:10rem;
+  }
+}
+/*desktop responsive design*/
+@media screen and (min-width: 1112px) and (max-width:1023px){
+  body {
+    background-image: url("images/samplePhoto.png");
+  }
+  #typed {
+    
+    font-size: 1rem;
+    
+  }
+  .flex-container.three {
+    margin-top:4rem;
+    margin-left:30rem;
+    margin-right:30rem;
+  }
+  #logo {
+    max-width: 6.5rem;
+    min-height: 3.9rem;
+    margin-left:2rem;
+  }
+  #knowYourself {
+    
+    font-size: 1rem;
+    
+    
+  }
+  #downArrow {
+    font-size:1.6em;
+    margin-right:2rem;
+  }
+  .dropdown-content {
+    margin-top: 5px;
+    max-width: 13.4rem;
+  }
+  .typed-cursor {
+
+    font-size:1.6em;
+  }
+  .font2 {
+    font-family: mainFont;
+    font-size: 1.6rem;
+  }
+  #centerContainer{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:10rem;
+  }
+  #content-container {
+    min-height:50rem;
+  }
+  #leftArrow {
+    
+    margin-top:200px;
+    
+  }
+  #centerContain{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:10rem;
+  }
+
+}
+/*desktop responsive design*/
+@media screen and (min-width: 1024px) and (max-width:1365px){
+  body {
+    background-image: url("images/samplePhoto.png");
+  }
+  #typed {
+    
+    font-size: 1rem;
+    
+  }
+  .flex-container.three {
+    margin-top:4rem;
+    margin-left:30rem;
+    margin-right:30rem;
+  }
+  #logo {
+    max-width: 6.5rem;
+    min-height: 3.9rem;
+    margin-left:2rem;
+  }
+  #knowYourself {
+    
+    font-size: 1rem;
+    
+    
+  }
+  #downArrow {
+    font-size:1.6em;
+    margin-right:2rem;
+  }
+  .dropdown-content {
+    margin-top: 5px;
+    max-width: 9.5rem;
+  }
+  .typed-cursor {
+
+    font-size:1.6em;
+  }
+  .font2 {
+    font-family: mainFont;
+    font-size: 1.1rem;
+  }
+  #centerContainer{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:10rem;
+  }
+  #content-container {
+    min-height:50rem;
+  }
+  #leftArrow {
+    
+    margin-top:200px;
+    
+  }
+  #centerContain{
+    padding-left:30rem;
+    padding-right:30rem;
+    padding-top:8rem;
+  }
+
+}
+/*desktop responsive design*/
+@media screen and (min-width: 1366px) and (max-width:1919px) {
+  body {
+    background-image: url("images/samplePhoto.png");
+  }
+  #typed {
+    
+    font-size: 1.5rem;
+    
+  }
+  .flex-container.three {
+    margin-top:4rem;
+    margin-left:45rem;
+    margin-right:45rem;
+  }
+  #logo {
+    max-width: 6.5rem;
+    min-height: 3.9rem;
+    margin-left:2rem;
+  }
+  #knowYourself {
+    
+    font-size: 1rem;
+    
+    
+  }
+  #downArrow {
+    font-size:1.6em;
+    margin-right:2rem;
+  }
+  .dropdown-content {
+    margin-top: 5px;
+    max-width: 9.4rem;
+  }
+  .typed-cursor {
+
+    font-size:1.6em;
+  }
+  .font2 {
+    font-family: mainFont;
+    font-size: 1.1rem;
+  }
+  #centerContainer{
+    padding-left:30rem;
+    padding-right:30rem;
+    padding-top:5rem;
+  }
+  #content-container {
+    min-height:50rem;
+  }
+  #leftArrow {
+    
+    margin-top:200px;
+    
+  }
+  #centerContain{
+    padding-left:40rem;
+    padding-right:40rem;
+    padding-top:12rem;
+  }
+
+}
+
+/*desktop responsive design*/
+@media screen and (min-width: 1920px){
+  body {
+    background-image: url("images/samplePhoto.png");
+  }
+  #typed {
+    
+    font-size: 1.9rem;
+    
+    
+  }
+  .flex-container.three {
+    margin-top:4rem;
+    margin-left:45rem;
+    margin-right:45rem;
+  }
+  #logo {
+    max-width: 10rem;
+    min-height: 7.4rem;
+    margin-left:2rem;
+  }
+  #knowYourself {
+    
+    font-size: 1.5rem;
+    
+    
+  }
+  #downArrow {
+    font-size:1.6em;
+    margin-right:2rem;
+  }
+  .dropdown-content {
+    margin-top: 5px;
+    max-width: 18.4rem;
+    padding-bottom:1rem;
+  }
+  .typed-cursor {
+
+    font-size:1.6em;
+  }
+  .font2 {
+    font-family: mainFont;
+    font-size: 1.6rem;
+  }
+  #centerContainer{
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:10rem;
+  }
+  #content-container {
+    min-height:50rem;
+  }
+  #leftArrow {
+    
+    margin-top:200px;
+    
+  }
+  #centerContain{
+    padding-left:40rem;
+    padding-right:40rem;
+    padding-top:12rem;
+  }
+
+}
