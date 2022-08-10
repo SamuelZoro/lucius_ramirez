@@ -14,6 +14,12 @@ const app = express();
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
+// to make data in these folders usable 
+app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/Fonts', express.static(path.join(__dirname, 'Fonts')));
+app.use('/jquery', express.static(path.join(__dirname, 'jquery')));
+
 //middleware
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
