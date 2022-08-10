@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- All files needed included in html file-->
+  <script src="https://kit.fontawesome.com/bcec439864.js" crossorigin="anonymous"></script>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="./src/css.css">
+  <title>Lucius Ramirez - The Nature of Humans</title>
+
+  <script>
+      /* Set the width of the side navigation to 100% */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  /* to hide main content when sidebar gets opened */
+  document.getElementById("main-content").style.display = "none";
+  /* to ensure sidebar doesn't get bigger than screen */
+  document.getElementById("mySidenav").style.position = "relative";
+  document.getElementById("leftArrow").style.display = "none";
+
+  document.getElementById("content-container").style.minHeight = "50rem";
+  
+  document.getElementById("content-container").style.maxHeight = "0";
+  
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  /* to show main content when sidebar gets closed */
+  document.getElementById("main-content").style.display = "block";
+  /* to ensure position of main content remains at the top after the sidebar is closed */
+  document.getElementById("mySidenav").style.position = "absolute";
+  document.getElementById("leftArrow").style.display = "block";
+}
+/*to open file into specified html tag when clicking on arrow icon */
+$(document).ready(function(){
+$("#leftArrow").click(function(){
+    $("#main-content").load("intro.html");
+  });
+});
+    
+
+  </script>
+
+</head>
+
+<body>
+  <!-- Navigation bar-->
+  
+  <!--Main section-->
+
+  
+  
+<!--Main content container-->
+  
+    <!--Side navigation-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="cross" class="fa-solid fa-xmark fa-2xs"></i></a>
+      <a href="index.html" onclick="closeNav()">Introduction</a>
+      <div id="centerDiv">
+      <hr class="divider2">
+      </div>
+      <a href="Human-Nature.html" onclick="closeNav()">The Nature of Humans</a>
+    </div>
+
+     <!--Side navigation-->
+     <div id="containSideNav">
+      <div id="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><i id="cross" class="fa-solid fa-xmark fa-2xs"></i></a>
+      
+        <!--algolia instantsearch widgets-->
+        <div class="search-panel__results">
+          <div id="searchbox"></div>
+          <div id="hits"></div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content-->
+    <main id="main-content">
+      <ul class="flex-container four">
+        <!--Search icon-->
+        <li class="flex-items">
+          <span onclick="openNav2()">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </span>
+      </li>
+      <!--menu-->
+        <li class="flex-items">
+          <span onclick="openNav()">
+          <img src="Photos/Burger menu.svg" alt="Menu" id="menu" width="14.95" height="11.22">
+        </span>
+      </li> 
+      </ul>
+      <!--Subheading-->
+      <h2 id="subheading">
+          THE NATURE OF HUMANS
+      </h2>
+      <!--paragraphs-->
+      <p id="intro-para">
+        A human could be walking through a supermarket aisle, 
+        they could be creeping through a forest trail. 
+        Either setting they&#39;d still be in survival mode. 
+        That aisle is built for the foraging of survival aiding tools, 
+        all put together by the modern-day hunter-gatherers of the nation 
+        to make the hunt easier and to make the hunt secure.
+    </p>
+    <p id="intro-para">
+        Remember that every time you observe the seemingly perpetual hustle and bustle of humans at your local supermarket, 
+        you are witnessing hundreds of thousands of years of primal, 
+        ancestral needs that are looking to be met within the elevated human habitat.     
+    </p>
+    <p id="intro-para">
+        Your interaction with the world should be as authentic and clear as this. 
+        It isn&#39;t enough to passively carry yourself throughout life and forget how things are on a fundamental level. 
+        The core of your being should exude beyond a generation of human existence as that way you get the full picture.
+    </main>
+    <!--next page arrow icon-->
+    <i id="leftArrow" class="fa-solid fa-caret-left fa-2xl"></i>
+</body>
+</html>
