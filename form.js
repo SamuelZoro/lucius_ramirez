@@ -37,7 +37,9 @@ app.post('/send', urlencodedParser, [
     .isLength({min:1}),
     check('email', 'Email is not valid')
     .isEmail()
-    .normalizeEmail()
+    .normalizeEmail(),
+    check('message')
+    .isLength({min:2})
   ],(req,res) => {
     //if the errors array is not empty an error message is returned and rendered in 'main' file
     const errors = validationResult(req)
