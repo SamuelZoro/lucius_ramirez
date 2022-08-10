@@ -84,10 +84,10 @@ app.post('/send', urlencodedParser, [
   
     // send mail with defined transport object
     let mailOptions = {
-      from: '"Nodemailer Contact" <sam.l.zoro@live.com>', // sender address
+      from: '"Lucius Ramirez" <sam.l.zoro@live.com>', // sender address
       to: "sam.l.zoro@live.com", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
+      subject: "CONNECT", // Subject line
+      text: "", // plain text body
       html: output // html body
     };
   
