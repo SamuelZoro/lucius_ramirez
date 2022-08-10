@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lucius Ramirez - Connect</title>
+  <script src="https://kit.fontawesome.com/bcec439864.js" crossorigin="anonymous"></script>
+  <script src="public/jquery/jquery.js"></script>
+  <link rel="stylesheet" href="public/css/style.css">
+
+  <script>
+    $(document).ready(function() {
+
+      const alertBox = document.getElementById('theAlert');
+      const alertBox2 = document.getElementById('alert2');
+//if input validation is has an error this alert should be displayed
+if (alertBox.textContent.includes('valid')) {
+  document.getElementById("theAlert").style.display = "block";
+}
+//if input validation is error-free this alert should be displayed
+if (alertBox2.textContent.includes('sent')) {
+  document.getElementById("alert2").style.display = "block";
+}
+//function to open and close when clicking on dropdown
+      $("div.dropdown").click(function () {
+        $("div.dropdown-content").toggle();
+      });
+      //function to close the dropdown when clicking outside the dropdown element
+      window.onclick = function (event) {
+        if (!event.target.matches("#downArrow") && !event.target.matches("#knowYourself")) {
+          $("div.dropdown-content").hide();
+        }
+      }
+    })
+    function setHref() {
+      //to switch ports when clicking on these links
+document.getElementById('index').href = window.location.protocol + "//" + window.location.hostname + ":3000/index.html";
+document.getElementById('introduction').href = window.location.protocol + "//" + window.location.hostname + ":3000/introduction.html";
+document.getElementById('humans').href = window.location.protocol + "//" + window.location.hostname + ":3000/the-nature-of-humans.html";
+}
+
+  </script>
+</head>
+<body onload="setHref()" id="body">
+       <!-- Navigation bar-->
+  <div id="move"></div>
+  <ul class="flex-container two">
+  <li>
+    <a id="index" href="index.html">
+    <img src="public/css/images/Logo.png" alt="Lucius Ramirez Logo" id="logo" width="65" height="39">
+  </a>
+</li>
+  <li id="dropdownFlex">
+    <div class="dropdown">
+    <a href="#link" id="knowYourself">KNOW YOURSELF<i id="downArrow" class="fa-solid fa-sort-down fa-xl"></i></a>
+    <div id="myDropdown" class="dropdown-content">
+      <a class="font2" id="introduction" href="introduction.html">Introduction</a>
+      <hr class="divider">
+      <a class="font2" id="humans" href="the-nature-of-humans.html">The Nature of Humans</a>
+    </div>
+  </div>
+</li>
+
+</ul>
+<!--main section-->
+<!--form-->
+<div id="centerContain">
+<div id="page-container">
+  <div id="form-container">
+    <p id="formDetails">example@email.com </p>
+    <p id="formTitle">
+      Get in contact with me
+    </p>
+    <form id="contactForm" action="send" method="POST">
+      <input id="nameInput" class="fields" type="text" size="40" name="name" placeholder="Name"><br>
+      <input id="emailInput" class="fields" type="text" name="email" placeholder="Your Email Address"><br>
+      <textarea class="fields" name="message" placeholder="Message"></textarea><br>
+      <button type="submit" name="submit">Send Message</button>
+</form>
+  </div>
+</div>
+<!--alert messages-->
+  <div class="alert" id="theAlert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  {{error}}
+  {{msg}}
+</div>
+<div id="alert2">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  {{msg}}
+</div>
+
+
+</div>
+</body>
+</html>
