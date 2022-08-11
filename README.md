@@ -1,6 +1,12 @@
 # lucius_ramirez
 
-_This project was generated with [create-instantsearch-app](https://github.com/algolia/create-instantsearch-app) by [Algolia](https://algolia.com)._
+This project is a simple personal Philosophy web application that provides an ebook that the user can flick through manually, and search through using a search engine. The user is also provided with the feature of sending a message to the owner of the web application by filling out a contact form.
+
+The technologies used were jQeury, Font Awesome, Algolia's InstantSearch API, Nodemailer, Express.js, Typed.js and Node.js.
+
+
+
+## Demo
 
 ## Get started
 
