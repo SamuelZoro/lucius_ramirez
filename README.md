@@ -48,7 +48,11 @@ I also plan to add hover properties to all clickable elements.
 
 ### Mobile
 
+Watch the mobile demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4CTkbemwYTee5JOQ)
+
 ### Desktop
+
+Watch the desktop demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4E93H17KtKBU062Q)
 
 ## Get started
 
