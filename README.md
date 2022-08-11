@@ -54,7 +54,7 @@ Here are a some examples of the designs I made, using Adobe XD, prior to the dev
 
 ![DESKTOP_LANDING](https://user-images.githubusercontent.com/84352644/184213950-615e9701-4019-4823-bded-043e212d7def.png)
 
-![DESKTOP_INTRO](https://user-images.githubusercontent.com/84352644/184213970-90cd9797-05c8-4eb7-b40a-e57f0e1736e0.png)
+![DESKTOP_INTRO](https://user-images.githubusercontent.com/84352644/184214392-03188063-4cf9-4da7-894e-55f6532905b2.png)
 
 ## Demo
 
