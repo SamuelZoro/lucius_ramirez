@@ -44,6 +44,18 @@ A second feature, is the choice to change the language in the web app.
 
 I also plan to add hover properties to all clickable elements.
 
+## UI Designs
+
+Here are a some examples of the designs I made, using Adobe XD, prior to the development of my application:
+
+![INTRO](https://user-images.githubusercontent.com/84352644/184213841-3670a09f-1021-46d2-ad62-13631a551947.png)
+
+![LANDING](https://user-images.githubusercontent.com/84352644/184213861-0f0f0c9d-607e-4759-ad22-f2ab58d7f5b3.png)
+
+![DESKTOP_LANDING](https://user-images.githubusercontent.com/84352644/184213950-615e9701-4019-4823-bded-043e212d7def.png)
+
+![DESKTOP_INTRO](https://user-images.githubusercontent.com/84352644/184213970-90cd9797-05c8-4eb7-b40a-e57f0e1736e0.png)
+
 ## Demo
 
 ### Mobile
