@@ -65,21 +65,3 @@ Watch the mobile demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4CTkbemw
 ### Desktop
 
 Watch the desktop demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4E93H17KtKBU062Q)
-
-## Get started
-
-To run this project locally, install the dependencies and run the local server:
-
-```sh
-npm install
-npm start
-```
-
-Alternatively, you may use [Yarn](https://http://yarnpkg.com/):
-
-```sh
-yarn
-yarn start
-```
-
-Open http://localhost:3000 to see your app.
