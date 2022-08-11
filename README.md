@@ -42,6 +42,8 @@ A feature I'm thinking of implementing is a dynamic background image that change
 
 A second feature, is the choice to change the language in the web app.
 
+I also plan to add hover properties to all clickable elements.
+
 ## Demo
 
 ## Get started
