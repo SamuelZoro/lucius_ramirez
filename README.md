@@ -26,11 +26,11 @@ One of the challenges that I faced during the development of this project was be
 
 Another challenge, was struggling to display a background image in the CSS of my Nodejs/Express app even though it would display when put in my HTML. It did not make sense to me since I had the CSS linked into my file that had the HTML and it was in the folder that my Express app was routed to run in. The mistake I had made was that I needed to include whatever folder I wished to use, regardless of whether it was in the folder which the app ran in, as a relative reference using the 'app.use' method.
 
-An additional one I encountered was my div element overlapping the viewport
+An additional one I encountered was my div element overlapping the viewport when switching between screen sizes even though the div was nested in a container. The solution to this issue was simply changing the unit to 'vh' rather than 'px', which at the time I wasn't even aware of the functionality of the different CSS units.
 
-Making my typwriter animation smooth
+My typwriter animation was also not working how I wanted. Every time it reached a particular word it would freeze for a second and then continue. For a while, I believed it had to do with the settings of the Typed.js library, maybe the speed of the typing. Eventually I decided to closely examine the HTML tag where the text was placed. I realised the text takes up two lines and where the line breaks is where the animation pauses for a second. So, it was because the text was not on a single line, which I hadn't imagined would have been a problem.
 
-The backdrop filter blur
+Trying to add a backdrop filter blur to a moving element (side navigation) in Safari was an issue that took me quite some time to figure out, only to realise it was bug that had nothing to do with me and something that the developers of Safari need to work on. Still, I wanted to use a backdrop filter for the moving element. So Instead I had a static div element in the background with the backdrop filter blur property applied to it, and a transparent property on the side navigation. When the side navigation slid out, behind it would be the static div, giving the impression that the side navigation has the backdrop filter blur.
 
 ## Demo
 
