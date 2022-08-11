@@ -32,6 +32,12 @@ My typwriter animation was also not working how I wanted. Every time it reached 
 
 Trying to add a backdrop filter blur to a moving element (side navigation) in Safari was an issue that took me quite some time to figure out, only to realise it was bug that had nothing to do with me and something that the developers of Safari need to work on. Still, I wanted to use a backdrop filter for the moving element. So Instead I had a static div element in the background with the backdrop filter blur property applied to it, and a transparent property on the side navigation. When the side navigation slid out, behind it would be the static div, giving the impression that the side navigation has the backdrop filter blur.
 
+## Future features to add
+
+A feature I'm thinking of implementing is a dynamic background image that changes everytime you refresh the page
+
+A second feature, is the choice to change the language in the web app.
+
 ## Demo
 
 ## Get started
