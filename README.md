@@ -1,6 +1,6 @@
 # lucius_ramirez
 
-This project is a simple personal Philosophy web application that provides an ebook that the user can flick through manually, and search through using a search engine. The user is also provided with the feature of sending a message to the owner of the web application by filling out a contact form.
+This project is a simple personal responsive, mobile-first developed Philosophy web application that provides an ebook that the user can flick through manually, and search through using a search engine. The user is also provided with the feature of sending a message to the owner of the web application by filling out a contact form.
 
 ## Technologies
 
@@ -31,6 +31,10 @@ An additional one I encountered was my div element overlapping the viewport when
 My typwriter animation was also not working how I wanted. Every time it reached a particular word it would freeze for a second and then continue. For a while, I believed it had to do with the settings of the Typed.js library, maybe the speed of the typing. Eventually I decided to closely examine the HTML tag where the text was placed. I realised the text takes up two lines and where the line breaks is where the animation pauses for a second. So, it was because the text was not on a single line, which I hadn't imagined would have been a problem.
 
 Trying to add a backdrop filter blur to a moving element (side navigation) in Safari was an issue that took me quite some time to figure out, only to realise it was bug that had nothing to do with me and something that the developers of Safari need to work on. Still, I wanted to use a backdrop filter for the moving element. So Instead I had a static div element in the background with the backdrop filter blur property applied to it, and a transparent property on the side navigation. When the side navigation slid out, behind it would be the static div, giving the impression that the side navigation has the backdrop filter blur.
+
+## Things to improve
+
+A feature I wish to fix is adding more available text that fills the whole div element for my search results in the desktop view, which i am working on doing by changing the word count of my text attribute in my Algolia InstantSearch app.
 
 ## Future features to add
 
