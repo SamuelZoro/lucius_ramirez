@@ -46,6 +46,10 @@ I also plan to add hover properties to all clickable elements.
 
 ## Demo
 
+### Mobile
+
+### Desktop
+
 ## Get started
 
 To run this project locally, install the dependencies and run the local server:
