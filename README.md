@@ -2,6 +2,8 @@
 
 This project is a simple personal Philosophy web application that provides an ebook that the user can flick through manually, and search through using a search engine. The user is also provided with the feature of sending a message to the owner of the web application by filling out a contact form.
 
+## Technologies
+
 The technologies used were jQuery, Font Awesome, Algolia's InstantSearch API, Node.js, Nodemailer, Express.js, and Typed.js.
 
 Using jQuery means I can implement the same required functionality with less lines as there are provided methods that I would overthise have to build from scratch which would take longer. It therefore makes using JQuery efficient.
@@ -10,9 +12,25 @@ Font awesome is a useful tool and source for improving the user interface and us
 
 Algolia's InstantSearch API was implemented into my project to allow users to use a search engine. I picked this as the documentation was simple, easy to follow and all the configurations I required for the search functionality were available.
 
+I used Nodejs as the Nodemailer module allowed me to verify its functionality without having to deploy my application, which wouldn't have been the case with PHP.
+
 The Nodemailer Node.js module was for the backend of my web app to provide a mail transporter for the contact form's functionality. This was my choice because it is very well secured, and permits you to verify whether the implementation worked locally, thus without having to deploy your application, which is incredibly useful.
 
-The Express.js backend framework was part of my Node.js app. It was useful as I used it to add all my backend features but also to connect to the front end of my application. 
+The Express.js backend framework was part of my Node.js app. It was useful as I used it to add all my backend features but also to connect to the front end of my application.
+
+Typed.js was used for animating my text, to give a typewriter effect. I used this to give a fun aesthetic to the visual design of the page.
+
+## Challenges Encountered
+
+One of the challenges that I faced during the development of this project was being able to integrate my Nodejs app with my Algolia InstantSearch app. I did not understand why only one could run at a time. After carefully reading the errors and doing some research I came to realisation that I had to use a different port number for the additional app.
+
+Another challenge, was struggling to display a background image in the CSS of my Nodejs/Express app even though it would display when put in my HTML. It did not make sense to me since I had the CSS linked into my file that had the HTML and it was in the folder that my Express app was routed to run in. The mistake I had made was that I needed to include whatever folder I wished to use, regardless of whether it was in the folder which the app ran in, as a relative reference using the 'app.use' method.
+
+An additional one I encountered was my div element overlapping the viewport
+
+Making my typwriter animation smooth
+
+The backdrop filter blur
 
 ## Demo
 
