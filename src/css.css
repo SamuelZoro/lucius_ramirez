@@ -47,7 +47,7 @@ html {
     padding: 0;
     margin: 0;
     list-style: none;
-    padding-right:0.5rem;
+    padding-right:2rem;
   }
 
   /*logo image */
@@ -208,7 +208,7 @@ p {
   }
 
   /*container for main content */
-#content-container {
+#content-contain {
     width: 100%;
     max-height:55rem;
     background-color: rgba(30, 30, 30, 0.171);
@@ -223,7 +223,7 @@ p {
     opacity:0;
     animation-fill-mode: forwards;
     padding-bottom:15px;
-    
+    min-height:55rem;
   }
 
   /*main content */
@@ -441,8 +441,36 @@ hr.divider2 {
     transition: 0.3s;
   }
 
+  /*left arrow icon */
+#leftArrow {
+    margin-left:20px;
+    margin-top:5px;
+    color:white;
+    float:left;
+    animation: mainContent linear 1s;
+    animation-delay: 300ms;
+    opacity:0;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+    bottom:0;
+    padding-bottom:10px;
+  }
+
+  /* flex container main content navigation */
+.flex-container.four {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:20px;
+    margin: 0;
+    list-style: none;
+  }
+
   /*mobile responsive design*/
-@media screen and (min-width:320px) and (max-width: 374px) {
+@media screen and (min-width:320px) and (max-width: 374px) 
+and (min-height: 558px) and (max-height:666px) {
     #typed {
       
       font-size: 0.9rem;
@@ -486,7 +514,8 @@ hr.divider2 {
     
   }
   /*mobile responsive design*/
-  @media screen and (min-width: 375px) and (max-width:413px) {
+  @media screen and (min-width: 375px) and (max-width:413px)
+  and (min-height:667px) and (max-height:735px) {
     #typed {
       
       font-size: 1.1rem;
@@ -517,7 +546,8 @@ hr.divider2 {
     }
   }
   /*mobile responsive design*/
-  @media screen and (min-width: 414px) and (max-width:767px) {
+  @media screen and (min-width: 414px) and (max-width:767px)
+  and (min-height:736px) and (max-height:767px) {
     #typed {
       
       font-size: 1.3rem;
@@ -529,7 +559,8 @@ hr.divider2 {
     }
   }
   /*desktop responsive design*/
-  @media screen and (min-width: 768px) and (max-width:833px) {
+  @media screen and (min-width: 1024px) and (max-width:1365px)
+  and (min-height:768px) and (max-height:1023px) {
     body {
       background-image: url("../Photos/samplePhoto.png");
     }
@@ -585,234 +616,10 @@ hr.divider2 {
     }
     
   }
+
   /*desktop responsive design*/
-  @media screen and (min-width: 834px) and (max-width:911px) {
-    body {
-      background-image: url("../Photos/samplePhoto.png");
-    }
-    #typed {
-      
-      font-size: 1.9rem;
-      
-      
-    }
-    .flex-container.three {
-      margin-top:2rem;
-    }
-    #logo {
-      max-width: 9rem;
-      min-height: 6.4rem;
-      margin-left:2rem;
-    }
-    #knowYourself {
-      
-      font-size: 1.5rem;
-      
-      
-    }
-    #downArrow {
-      font-size:1.6em;
-      margin-right:2rem;
-    }
-    .dropdown-content {
-      margin-top: 5px;
-      max-width: 13.4rem;
-      padding-bottom:1rem;
-    }
-    .typed-cursor {
-  
-      font-size:1.6em;
-    }
-    .font2 {
-      font-family: mainFont;
-      font-size: 1.6rem;
-    }
-    #centerContainer{
-      padding-left:6rem;
-      padding-right:6rem;
-      padding-top:10rem;
-    }
-    #content-container {
-      min-height:50rem;
-    }
-    #leftArrow {
-      
-      margin-top:200px;
-      
-    }
-  }
-  /*desktop responsive design*/
-  @media screen and (min-width: 912px) and (max-width:1111px) {
-    body {
-      background-image: url("../Photos/samplePhoto.png");
-    }
-    #typed {
-      
-      font-size: 2.4rem;
-      
-      
-    }
-    .flex-container.three {
-      margin-top:4rem;
-    }
-    #logo {
-      max-width: 10.5rem;
-      min-height: 7.9rem;
-      margin-left:2rem;
-    }
-    #knowYourself {
-      
-      font-size: 2rem;
-      
-      
-    }
-    #downArrow {
-      font-size:1.6em;
-      margin-right:2rem;
-    }
-    .dropdown-content {
-      margin-top: 5px;
-      max-width: 18.4rem;
-      padding-bottom:1rem;
-    }
-    .typed-cursor {
-  
-      font-size:1.6em;
-    }
-    .font2 {
-      font-family: mainFont;
-      font-size: 2rem;
-    }
-    #centerContainer{
-      padding-left:6rem;
-      padding-right:6rem;
-      padding-top:10rem;
-    }
-    #content-container {
-      min-height:50rem;
-    }
-    #leftArrow {
-      
-      margin-top:200px;
-      
-    }
-  }
-  /*desktop responsive design*/
-  @media screen and (min-width: 1112px) and (max-width:1023px){
-    body {
-      background-image: url("../Photos/samplePhoto.png");
-    }
-    #typed {
-      
-      font-size: 1rem;
-      
-    }
-    .flex-container.three {
-      margin-top:4rem;
-      margin-left:30rem;
-      margin-right:30rem;
-    }
-    #logo {
-      max-width: 6.5rem;
-      min-height: 3.9rem;
-      margin-left:2rem;
-    }
-    #knowYourself {
-      
-      font-size: 1rem;
-      
-      
-    }
-    #downArrow {
-      font-size:1.6em;
-      margin-right:2rem;
-    }
-    .dropdown-content {
-      margin-top: 5px;
-      max-width: 13.4rem;
-    }
-    .typed-cursor {
-  
-      font-size:1.6em;
-    }
-    .font2 {
-      font-family: mainFont;
-      font-size: 1.6rem;
-    }
-    #centerContainer{
-      padding-left:6rem;
-      padding-right:6rem;
-      padding-top:10rem;
-    }
-    #content-container {
-      min-height:50rem;
-    }
-    #leftArrow {
-      
-      margin-top:200px;
-      
-    }
-  
-  }
-  /*desktop responsive design*/
-  @media screen and (min-width: 1024px) and (max-width:1365px){
-    body {
-      background-image: url("../Photos/samplePhoto.png");
-    }
-    #typed {
-      
-      font-size: 2rem;
-      
-    }
-    .flex-container.three {
-      margin-top:4rem;
-      margin-left:25rem;
-      margin-right:25rem;
-    }
-    #logo {
-      max-width: 6.5rem;
-      min-height: 3.9rem;
-      margin-left:2rem;
-    }
-    #knowYourself {
-      
-      font-size: 1rem;
-      
-      
-    }
-    #downArrow {
-      font-size:1.6em;
-      margin-right:2rem;
-    }
-    .dropdown-content {
-      margin-top: 5px;
-      max-width: 9.5rem;
-    }
-    .typed-cursor {
-  
-      font-size:1.6em;
-    }
-    .font2 {
-      font-family: mainFont;
-      font-size: 1.1rem;
-    }
-    #centerContainer{
-      padding-left:6rem;
-      padding-right:6rem;
-      padding-top:10rem;
-    }
-    #content-container {
-      min-height:50rem;
-    }
-    #leftArrow {
-      
-      margin-top:200px;
-      
-    }
-  
-  }
-  /*desktop responsive design*/
-  @media screen and (min-width: 1366px) and (max-width:1919px) {
+  @media screen and (min-width: 1366px) and (max-width:1919px)
+   {
     body {
       background-image: url("../Photos/samplePhoto.png");
     }
