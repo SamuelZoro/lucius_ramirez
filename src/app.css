@@ -5,6 +5,11 @@ h1{
 /*property of paragraph tag */
 p {
   font-size:1.6rem;
+  line-height: normal;
+}
+
+a#searchHits{
+  padding:0;
 }
 
 /*results of search */
@@ -40,6 +45,7 @@ p {
   color:inherit;
   font-family: mainFont;
   padding-right:30px;
+  
 }
 
 /* colour of placeholder text */
@@ -111,6 +117,10 @@ input {
     padding: .5em 0;
   border-top: 0.1px solid rgba(255, 255, 255, 0.481);
     width: 100%;
+  }
+
+  article {
+    width:100%;
   }
 /*divider property */
   hr {
