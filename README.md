@@ -1,6 +1,6 @@
 # lucius_ramirez
 
-This project is a simple personal responsive, mobile-first developed Philosophy web application that provides an ebook that the user can flick through manually, and search through using a search engine. The user is also provided with the feature of sending a message to the author by filling out a contact form.
+This project is a simple personal responsive, mobile-first developed Philosophy web application that provides an ebook that the user can flick through by the click or touch of a button, and search through using a search engine. The user is also provided with the feature of sending a message to the author by filling out a contact form.
 
 ## Technologies
 
