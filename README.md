@@ -64,7 +64,8 @@ Here are a some examples of the designs I made, using Adobe XD, prior to the dev
 ![e-book page (desktop, hi-fi)](https://user-images.githubusercontent.com/84352644/193344947-36da423a-c8aa-4f54-83cd-cbf4e806f7a4.png)
 
 ![contact page (desktop, lo-fi)](https://user-images.githubusercontent.com/84352644/193344511-8ccfa416-591d-4dc2-a34a-01eec84f58e8.png)
-![contact page (desktop, hi-fi)](https://user-images.githubusercontent.com/84352644/193344956-00b59da9-9cf4-4669-a7b6-1e2938c56de6.png)
+![contact page (desktop, hi-fi)](https://user-images.githubusercontent.com/84352644/193345574-c7c754a2-54e9-457c-8930-604f711127b0.png)
+
 
 ## Demo
 
