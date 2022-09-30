@@ -48,13 +48,27 @@ I also plan to add hover properties to all clickable elements.
 
 Here are a some examples of the designs I made, using Adobe XD, prior to the development of my application:
 
-![INTRO](https://user-images.githubusercontent.com/84352644/184213841-3670a09f-1021-46d2-ad62-13631a551947.png)
+#### High and Low-fidelity Wireframes (Mobile)
 
-![LANDING](https://user-images.githubusercontent.com/84352644/184213861-0f0f0c9d-607e-4759-ad22-f2ab58d7f5b3.png)
+![index page (mobile, lo-fi)](https://user-images.githubusercontent.com/84352644/193344343-b49c2ee9-756b-449f-9128-7ed886e9112d.png)
+![index page (mobile, hi-fi)](https://user-images.githubusercontent.com/84352644/193344856-d0fec5b4-7d5e-4c60-ac84-958fcea9f287.png)
 
-![DESKTOP_LANDING](https://user-images.githubusercontent.com/84352644/184213950-615e9701-4019-4823-bded-043e212d7def.png)
 
-![DESKTOP_INTRO](https://user-images.githubusercontent.com/84352644/184214392-03188063-4cf9-4da7-894e-55f6532905b2.png)
+![e-book page (mobile, lo-fi)](https://user-images.githubusercontent.com/84352644/193344360-7b62cb6c-1af3-484f-b3e8-c24807bf9ea0.png)
+![e-book page (mobile, hi-fi)](https://user-images.githubusercontent.com/84352644/193344866-64b49495-2ab8-4f7d-ad79-aafefa76a051.png)
+
+![contact page (mobile, lo-fi)](https://user-images.githubusercontent.com/84352644/193344369-9c9652c8-86e7-4fc8-821a-cb6cfcf2c613.png)
+![contact page (mobile, hi-fi)](https://user-images.githubusercontent.com/84352644/193344884-9c1d791c-a6e3-4a15-8758-49e67b33f88f.png)
+
+#### High and Low Fidelity Wireframes (Desktop)
+![index page (desktop, lo-fi)](https://user-images.githubusercontent.com/84352644/193344496-78b0b3a7-d195-43e9-a27e-7da1871c146c.png)
+![index page (desktop, hi-fi)](https://user-images.githubusercontent.com/84352644/193344933-8fe2fe4f-a6a0-43d6-ac05-30427aa0ea76.png)
+
+![e-book page (desktop, lo-fi)](https://user-images.githubusercontent.com/84352644/193344506-96bde9da-f7dc-48c1-805f-30ff5efa0fca.png)
+![e-book page (desktop, hi-fi)](https://user-images.githubusercontent.com/84352644/193344947-36da423a-c8aa-4f54-83cd-cbf4e806f7a4.png)
+
+![contact page (desktop, lo-fi)](https://user-images.githubusercontent.com/84352644/193344511-8ccfa416-591d-4dc2-a34a-01eec84f58e8.png)
+![contact page (desktop, hi-fi)](https://user-images.githubusercontent.com/84352644/193344956-00b59da9-9cf4-4669-a7b6-1e2938c56de6.png)
 
 ## Demo
 
