@@ -69,10 +69,5 @@ Here are a some examples of the designs I made, using Adobe XD, prior to the dev
 
 ## Demo
 
-### Mobile
+Watch the demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4GAgsZcD--YlX6hQ?e=zjpSIS)
 
-Watch the mobile demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4CTkbemwYTee5JOQ)
-
-### Desktop
-
-Watch the desktop demonstration [here](https://1drv.ms/v/s!Al17jSRcUpo4gP4E93H17KtKBU062Q)
